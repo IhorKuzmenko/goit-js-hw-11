@@ -37,7 +37,7 @@ form.addEventListener('submit', event => {
             closeOnEscape: true,
             transitionIn: 'fadeInLeft',
             transitionOut: 'fadeOut',
-            iconUrl: 'goit-js-hw-11/src/img/arrow.svg',
+           iconUrl: './img/arrow.svg',
             iconColor: '#ffffff',
           });
           return;
