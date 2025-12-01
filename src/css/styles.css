@@ -127,6 +127,7 @@
 }
 
 .custom-error-toast .iziToast-close {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +138,6 @@
   background: #b51b1b;
   border-radius: 50%;
   border: none;
-  cursor: pointer;
 }
 
 .custom-error-toast .iziToast-close::after {
@@ -145,6 +145,6 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url('../img/arrow_right.svg') no-repeat center center;
+  background: url('/img/arrow_right.svg') no-repeat center center;
   background-size: contain;
 }
