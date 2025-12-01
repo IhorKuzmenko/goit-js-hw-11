@@ -33,7 +33,7 @@ form.addEventListener('submit', event => {
             position: 'topRight',
             layout: 2,
             timeout: 5000,
-            close: true, // стандартный крестик справа
+            close: true,
             closeOnEscape: true,
             transitionIn: 'fadeInLeft',
             transitionOut: 'fadeOut',
