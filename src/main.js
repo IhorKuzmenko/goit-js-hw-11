@@ -33,7 +33,7 @@ form.addEventListener('submit', event => {
               'Sorry, there are no images matching your search query. Please, try again!',
             position: 'topRight',
             layout: 2,
-            timeout: 500000000,
+            timeout: 5000,
             close: true,
             closeOnEscape: true,
             transitionIn: 'fadeInLeft',
