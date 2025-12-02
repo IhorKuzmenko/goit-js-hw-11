@@ -1,5 +1,6 @@
 import './css/styles.css';
 import './css/loader.css';
+import arrowLeft from './img/arrow.svg';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -37,7 +38,7 @@ form.addEventListener('submit', event => {
             closeOnEscape: true,
             transitionIn: 'fadeInLeft',
             transitionOut: 'fadeOut',
-            iconUrl: '/img/arrow.svg',
+            iconUrl: arrowLeft,
             iconColor: '#ffffff',
           });
           return;
