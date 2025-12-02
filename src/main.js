@@ -19,18 +19,21 @@ form.addEventListener('submit', event => {
   event.preventDefault();
 
   clearGallery();
-  showLoader();
 
   const query = event.target.elements['search-text'].value.trim();
 
   if (!query) {
+    hideLoader();
     iziToast.show({
       class: 'custom-error-toast',
       message: 'Enter the search word',
       position: 'topRight',
+      timeout: 5000,
     });
     return;
   }
+
+  showLoader();
 
   getImagesByQuery(query)
     .then(data => {
@@ -54,7 +57,15 @@ form.addEventListener('submit', event => {
       createGallery(data.hits);
     })
     .catch(error => {
+      hideLoader();
       console.log(error);
+
+      iziToast.show({
+        class: 'custom-error-toast',
+        message: 'Something went wrong while fetching data',
+        position: 'topRight',
+        timeout: 5000,
+      });
     })
     .finally(() => {
       hideLoader();
