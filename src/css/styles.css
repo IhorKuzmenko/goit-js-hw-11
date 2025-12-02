@@ -103,6 +103,10 @@
   color: #2e2f42;
 }
 
+.iziToast > .iziToast-body {
+  margin: 0 !important;
+}
+
 .custom-error-toast {
   width: 432px !important;
   padding: 20px !important;
